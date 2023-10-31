@@ -1,0 +1,48 @@
+﻿<Window x:Class="TaschenRechner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaschenRechner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="769" Width="630">
+    <Viewbox Stretch="Fill">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button  Grid.Column="4" Content="="  FontSize="32" HorizontalAlignment="Center" Margin="6,6,6,6"   VerticalAlignment="Top" Height="108" Width="140" Grid.Row="0" Click="Button_Click"/>
+            <Button x:Name="Eins" FontSize="32" Content="1" Margin="4,7,8,0" VerticalAlignment="Top" Height="108" Grid.Row="1"  Grid.Column="0" Click="Button_Click_1"/>
+            <Button x:Name="Zwei" FontSize="32" Content="2" Margin="6,6,6,6" VerticalAlignment="Top" Height="108" Grid.Row="1" Grid.Column="1" Click="Button_Click_2"/>
+            <Button x:Name="Drei" FontSize="32" Grid.Column="2" Content="3" HorizontalAlignment="Center" Margin="6,6,6,6" Grid.Row="1" VerticalAlignment="Top" Height="108" Width="140" Click="Button_Click_3"/>
+            <Button Content="4" FontSize="32" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Height="108" Width="140" Margin="6,6,6,6" Click="Button_Click_4" />
+            <Button Grid.Column="1" FontSize="32" Content="5" HorizontalAlignment="Left" Margin="6,6,6,6" Grid.Row="2" Height="108" Width="140" VerticalAlignment="Top" Click="Button_Click_5"/>
+            <Button Grid.Column="2" FontSize="32" Content="6" HorizontalAlignment="Left" Margin="6,6,6,6" Grid.Row="2" Height="108" Width="140" VerticalAlignment="Top" Click="Button_Click_6"/>
+            <Button Content="7" FontSize="32" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="108" Width="140" Margin="6,6,6,6" Click="Button_Click_7" />
+            <Button Grid.Column="1" Content="8" FontSize="32" HorizontalAlignment="Left" Margin="6,6,6,6" Grid.Row="3" Height="108" Width="140" VerticalAlignment="Top" Click="Button_Click_8"/>
+            <Button Grid.Column="2" FontSize="32" Content="9" HorizontalAlignment="Left" Margin="6,6,6,6" Grid.Row="3" Height="108" Width="140" VerticalAlignment="Top" Click="Button_Click_9"/>
+            <Button Grid.Column="1" Content="0" FontSize="32" HorizontalAlignment="Left" Margin="6,6,6,6" Grid.Row="4" Height="108" Width="140" VerticalAlignment="Top" Click="Button_Click_0"/>
+            <TextBlock FontSize="40"  x:Name="Ergebnis" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="5,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="428" Height="101"/>
+            <Button FontSize="32" Grid.Column="3" Content="+" HorizontalAlignment="Center" Margin="6,6,6,6" Grid.Row="1" VerticalAlignment="Top" Height="108" Width="140" Click="Button_Click_plus"/>
+            <Button FontSize="32" Grid.Column="3" Content="-" HorizontalAlignment="Center" Margin="6,6,6,6" Grid.Row="2" VerticalAlignment="Top" Height="108" Width="140" Click="Button_Click_minus"/>
+            <Button FontSize="32" Grid.Column="3" Content="*" HorizontalAlignment="Center" Margin="6,6,6,6" Grid.Row="3" VerticalAlignment="Top" Height="108" Width="140" Click="Button_Click_multiplizieren"/>
+            <Button FontSize="32" Grid.Column="3" Content="/" HorizontalAlignment="Center" Margin="6,6,6,6" Grid.Row="4" VerticalAlignment="Top" Height="108" Width="140" Click="Button_Click_dividieren"/>
+            <Button Content="CE" FontSize="32" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Height="108" Width="140" Margin="6,6,6,6" Click="Reset" />
+            <Button FontSize="32" Grid.Column="2" Content="Sqrt" HorizontalAlignment="Center" Margin="6,6,6,6" Grid.Row="4" VerticalAlignment="Top" Height="108" Width="140" Click="Button_Click_10"/>
+
+
+
+        </Grid>
+    </Viewbox>
+
+</Window>
